@@ -1,0 +1,5 @@
+colons:
+  max-spaces-after: -1
+indentation:
+  spaces: 2
+  indent-sequences: false

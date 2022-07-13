@@ -1,0 +1,26 @@
+version: "3.7"
+services:
+  clang:
+    image: invasy/remote-dev-clang:latest
+    build:
+      context: clang
+    cap_add:
+    - SYS_ADMIN
+    container_name: remote_dev_clang
+    hostname: clang
+    domainname: invasy.dev
+    ports:
+    - "127.0.0.1:22001:22"
+    restart: unless-stopped
+  gcc:
+    image: invasy/remote-dev-gcc:latest
+    build:
+      context: gcc
+    cap_add:
+    - SYS_ADMIN
+    container_name: remote_dev_gcc
+    hostname: gcc
+    domainname: invasy.dev
+    ports:
+    - "127.0.0.1:22002:22"
+    restart: unless-stopped

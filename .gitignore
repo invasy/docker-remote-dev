@@ -1,0 +1,14 @@
+.idea/
+.idea_modules/
+.vscode/
+*.iws
+*.swp
+*~
+*.bz2
+*.gz
+*.xz
+*.zip
+*.tbz2
+*.tgz
+*.txz
+*.tar.*
